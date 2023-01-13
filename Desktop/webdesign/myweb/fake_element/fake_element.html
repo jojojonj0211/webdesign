@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>偽元素練習</title>
+    <style>
+        .container {
+            display: flex;
+            /* 水平置中 */
+            justify-content: center;
+            /* 垂直置中 */
+            align-content: center;
+            flex-wrap: wrap;
+        }
+
+        .box {
+            position: relative;
+            /* 原本的box設定成相對定位 */
+            top: 400px;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            width: 100px;
+            height: 100px;
+            background: red;
+        }
+
+        .box::before {
+            position: absolute;
+            /* 設定成絕對定位 */
+            content: "這是一段文字這是一段文字這是一段文字這是一段文字這是一段文字";
+            /* 沒有加就不會出現偽元素 */
+            top: 0;
+            bottom: 0;
+            left: -150px;
+            right: 0;
+            width: 100px;
+            height: 100px;
+            background: powderblue;
+        }
+
+        .box::after {
+            position: absolute;
+            /* 設定成絕對定位 */
+            content: "這是一段文字";
+            /* 沒有加就不會出現偽元素 */
+            top: 0;
+            bottom: 0;
+            left: 150px;
+            right: 0;
+            width: 100px;
+            height: 100px;
+            background: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+
+        </div>
+    </div>
+</body>
+
+</html>
