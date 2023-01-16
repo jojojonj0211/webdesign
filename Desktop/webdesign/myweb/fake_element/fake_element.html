@@ -2,6 +2,7 @@
 <html>
 
 <head>
+    <!-- <link rel="stylesheet" href="style.css"> -->
     <title>偽元素練習</title>
     <style>
         .container {
@@ -13,45 +14,67 @@
             flex-wrap: wrap;
         }
 
+        /*　小火龍　*/
         .box {
             position: relative;
             /* 原本的box設定成相對定位 */
-            top: 400px;
-            bottom: 0;
-            left: 0;
-            right: 0;
+            top: 300px;
             margin: auto;
-            width: 100px;
-            height: 100px;
-            background: red;
+            width: 300px;
+            height: 300px;
+            background-image: url("img/th.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center center;
+            text-align: center;
+            z-index: 1;
         }
 
+        /*　小火龍的火焰　*/
         .box::before {
             position: absolute;
-            /* 設定成絕對定位 */
-            content: "這是一段文字這是一段文字這是一段文字這是一段文字這是一段文字";
-            /* 沒有加就不會出現偽元素 */
-            top: 0;
-            bottom: 0;
-            left: -150px;
-            right: 0;
+            content: "";
+            top: 69px;
+            bottom: 0px;
+            left: 230px;
+            right: 0px;
             width: 100px;
-            height: 100px;
-            background: powderblue;
+            height: 56px;
+            background-image: url("img/fire.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            z-index: 3;
+            transition: all 0.1s;
+
         }
 
+        /* 小火龍的火焰-移動效果 */
+        .box:hover::before {
+            left: 250px;
+        }
+
+        /* 小火龍的火焰 */
         .box::after {
             position: absolute;
-            /* 設定成絕對定位 */
-            content: "這是一段文字";
-            /* 沒有加就不會出現偽元素 */
-            top: 0;
-            bottom: 0;
-            left: 150px;
-            right: 0;
+            content: "";
+            top: 69px;
+            bottom: 0px;
+            left: 230px;
+            right: 0px;
             width: 100px;
-            height: 100px;
-            background: blue;
+            height: 56px;
+            background-image: url("img/fire.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            z-index: 3;
+            transition: all 0.3s;
+
+        }
+
+        /* 小火龍的火焰-伸縮效果 */
+        .box:hover::after {
+            background-size: 800px 56px;
+            width: 800px;
         }
     </style>
 </head>
