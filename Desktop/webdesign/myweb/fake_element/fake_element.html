@@ -28,9 +28,10 @@
             background-position: center center;
             text-align: center;
             z-index: 1;
+
         }
 
-        /*　小火龍的火焰　*/
+        /*　小火龍的火焰　
         .box::before {
             position: absolute;
             content: "";
@@ -44,35 +45,32 @@
             background-size: contain;
             background-repeat: no-repeat;
             z-index: 3;
-            transition: all 0.1s;
 
-        }
+        }*/
 
-        /* 小火龍的火焰-移動效果 */
+        /* 小火龍的火焰-移動效果 
         .box:hover::before {
-            left: 250px;
-        }
+            left: 950px;
+        }*/
 
         /* 小火龍的火焰 */
         .box::after {
             position: absolute;
             content: "";
             top: 69px;
-            bottom: 0px;
             left: 230px;
-            right: 0px;
-            width: 100px;
+            width: 70px;
             height: 56px;
             background-image: url("img/fire.png");
-            background-size: contain;
+            background-size: 800px 56px;
             background-repeat: no-repeat;
-            z-index: 3;
-            transition: all 0.3s;
+            transition: width 1s;
 
         }
 
         /* 小火龍的火焰-伸縮效果 */
         .box:hover::after {
+            left: 230px;
             background-size: 800px 56px;
             width: 800px;
         }

@@ -1,0 +1,13 @@
+.box{
+    color:white;
+    text-align:center;
+    background-color:#356EAF;
+    width:100px;
+    height:100px;
+    transition:width 1s,height 1s;
+    }
+    .box:hover{
+    background-color:#356EAF;
+    width:150px;
+    height:150px;
+    }
