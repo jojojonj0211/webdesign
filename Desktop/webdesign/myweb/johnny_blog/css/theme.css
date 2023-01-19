@@ -845,7 +845,15 @@ progress {
 
 .col-12 {
   flex: 0 0 auto;
-  width: 100%;
+  width: 50%;
+}
+
+.line-left{
+  position: absolute;
+  left: 700px;
+  width: 50%;
+  top: 500px;
+  border-bottom: solid #000 1px;
 }
 
 .offset-1 {
@@ -1383,7 +1391,7 @@ progress {
 .button1 {
   position: absolute;
   left: 350px;
-  bottom: 500px;
+  bottom: 490px;
   text-align: center;
   background-color: #a56007;
   border-radius: 20px;
@@ -1413,7 +1421,7 @@ progress {
 .button2 {
   position: absolute;
   left: 350px;
-  bottom: 400px;
+  bottom: 390px;
   text-align: center;
   background-color: #a56007;
   border-radius: 20px;
@@ -1443,7 +1451,7 @@ progress {
 .button3 {
   position: absolute;
   left: 350px;
-  bottom: 300px;
+  bottom: 290px;
   text-align: center;
   background-color: #a56007;
   border-radius: 20px;
@@ -1473,7 +1481,7 @@ progress {
 .button4 {
   position: absolute;
   left: 350px;
-  bottom: 200px;
+  bottom: 190px;
   text-align: center;
   background-color: #a56007;
   border-radius: 20px;
@@ -1503,7 +1511,7 @@ progress {
 .button5 {
   position: absolute;
   left: 350px;
-  bottom: 100px;
+  bottom: 90px;
   text-align: center;
   background-color: #a56007;
   border-radius: 20px;
